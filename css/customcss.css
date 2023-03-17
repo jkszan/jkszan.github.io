@@ -1,0 +1,17 @@
+.header-width{
+    width: 250px !important;
+}
+.site-main {
+    margin-left: 250px !important;
+}
+
+@media only screen and (max-width: 991px){
+
+    .site-main {
+        margin-left: 0px !important;
+    }
+}
+
+.picture-opacity{
+    opacity: 1 !important;
+}
