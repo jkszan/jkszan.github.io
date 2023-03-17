@@ -10,14 +10,13 @@
           content="Jacob Kszan, resume, CV, portfolio, Software Engineer"/>
     <meta name="author" content="Jacob Kszan"/>
     <link rel="shortcut icon" href="jacob.png">
-
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/animate.css" type="text/css">
     <link rel="stylesheet" href="css/animations.css" type="text/css">
     <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
-    <link rel="stylesheet" href="css/customcss.css" type="text/css">
+    <link rel="stylesheet" href="css/custom.css" type="text/css">
 
     <script src="js/modernizr.custom.js"></script>
 </head>
@@ -32,13 +31,21 @@
 </div>
 <!-- /Loading animation -->
 
-<div id="page" class="page">
-    <!-- SideBar -->
-    <header id="site_header" class="header mobile-menu-hide header-width">
+<div id="page" class="page one-page-style">
+    <!-- Header -->
+    <header id="site_header" class="header mobile-menu-hide">
         <div class="header-content clearfix">
-            <div class="my-photo">
-                <img src="images/photo.jpg" alt="image">
+            <!--            <div class="my-photo">-->
+            <!--                <img src="images/photo.jpg" alt="image">-->
+            <!--            </div>-->
+
+            <!-- Social Links -->
+            <div class="social-links py-2">
+                <a href="https://www.jacobkszan@gmail.com" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+                <a href="https://www.linkedin.com/in/jacobkszan/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/jkszan" target="_blank"><i class="fab fa-github"></i></a>
             </div>
+            <!-- / Social Links -->
 
             <div class="site-title-block">
                 <div class="site-title">Jacob Kszan</div>
@@ -49,11 +56,8 @@
             <div class="site-nav">
                 <!-- Main menu -->
                 <ul id="nav" class="site-main-menu">
-<!--                    <li>-->
-<!--                        <a class="pt-trigger" href="#home">Home</a>-->
-<!--                    </li>-->
                     <li>
-                        <a class="pt-trigger" href="#about">About</a>
+                        <a class="pt-trigger" href="#home">About</a><!-- href value = data-id without # of .pt-page. -->
                     </li>
                     <li>
                         <a class="pt-trigger" href="#experience">Experience</a>
@@ -75,20 +79,12 @@
             </div>
             <!-- Navigation -->
 
-            <!-- Social Links -->
-            <div class="social-links">
-                <a href="https://www.jacobkszan@gmail.com" target="_blank"><i class="fab fa-google-plus-g"></i></a>
-                <a href="https://www.linkedin.com/in/jacobkszan/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/jkszan" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-            <!-- / Social Links -->
-
             <!-- Copyrights -->
             <div class="copyrights">© 2023 All rights reserved.</div>
             <!-- / Copyrights -->
         </div>
     </header>
-    <!-- /SideBar -->
+    <!-- /Header -->
 
     <!-- Mobile Header -->
     <div class="mobile-header mobile-visible">
@@ -108,28 +104,26 @@
     <!-- /Mobile Header -->
 
     <!-- Arrows Nav -->
-    <div class="lmpixels-arrows-nav">
-        <div class="lmpixels-arrow-left"><i class="lnr lnr-chevron-left"></i></div>
-        <div class="lmpixels-arrow-right"><i class="lnr lnr-chevron-right"></i></div>
-    </div>
+    <div class="lmpixels-scroll-to-top"><i class="lnr lnr-chevron-up"></i></div>
     <!-- /Arrows Nav -->
 
     <!-- Main Content -->
-    <div id="main" class="site-main" >
+    <div id="main" class="site-main">
         <!-- Page changer wrapper -->
         <div class="pt-wrapper">
             <!-- Subpages -->
             <div class="subpages">
 
-
-                <section class="pt-page" data-id="about">
-                    <div class="section-inner custom-page-content bg-light">
-                        <div class="row mx-0">
+                <!-- Home Subpage -->
+                <section id="home" class="pt-page pt-page-home start-page">
+                    <div class="section-inner vcentered">
+                        <div class="mask"></div>
+                        <div class="row">
                             <div class="col-sm-12 col-md-12 col-lg-12">
-                                <div class="my-photo">
-                                    <img src="images/photo.jpg" alt="image">
-                                </div>
-                                <div class="title-block text-center">
+                                <div class="title-block">
+                                    <div class="my-photo">
+                                        <img src="images/photo.jpg" alt="image">
+                                    </div>
                                     <h2>Jacob Kszan</h2>
                                     <div class="owl-carousel text-rotation">
                                         <div class="item">
@@ -139,7 +133,6 @@
                                             <div class="sp-subtitle">Software Engineer</div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -174,12 +167,12 @@
 
 
                         </div>
-
                     </div>
                 </section>
+                <!-- End of Home Subpage -->
 
                 <!-- Experience Subpage -->
-                <section class="pt-page" data-id="experience">
+                <section class="pt-page" id="experience">
                     <div class="section-inner custom-page-content">
                         <div class="section-title-block second-style">
                             <h2 class="section-title">Experience</h2>
@@ -247,7 +240,7 @@
                 <!-- Experience Subpage -->
 
                 <!-- Projects Subpage -->
-                <section class="pt-page" data-id="projects">
+                <section class="pt-page" id="projects">
                     <div class="section-inner custom-page-content">
                         <div class="section-title-block second-style">
                             <h2 class="section-title">Projects</h2>
@@ -258,130 +251,70 @@
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12">
                                     <div class="blog-masonry two-columns clearfix">
-
-                                        <!-- Project Post 1 -->
-                                        <div class="item post-1">
-                                            <div class="blog-card">
-                                                <div class="media-block">
-                                                    <div class="category">
-                                                        <a href="#" title="View all posts in UI">Tripsomnia</a>
+                                        <div class="section-content">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12">
+                                                    <div class="col-inner bs-30">
+                                                        <div class="block-title">
+                                                            <h3></h3>
+                                                        </div>
+                                                        <div class="timeline timeline-second-style1 bs-30 clearfix">
+                                                            <div class="timeline-item clearfix">
+                                                                <div class="divider"></div>
+                                                                <div class="right-part">
+                                                                    <div class="d-flex justify-content-between">
+                                                                        <h4 class="item-title">Glassdoor Review
+                                                                            Analyzer</h4>
+                                                                        <p class="item-title">Docker, Python, Flask,
+                                                                            MySQL, Selinium, Tableau</p>
+                                                                    </div>
+                                                                    <p class="item-title">https://www.google.com/</p>
+                                                                    <p>
+                                                                    <ul>
+                                                                        <li>Scrape reviews using Selenium through a REST
+                                                                            API, storing them in a MySQL database.
+                                                                        </li>
+                                                                        <li>Produces dynamic, filterable dashboards
+                                                                            showing review information over time.
+                                                                        </li>
+                                                                        <li>Full containerized within Docker Compose.
+                                                                        </li>
+                                                                    </ul>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="timeline timeline-second-style1 bs-30 clearfix">
+                                                            <div class="timeline-item clearfix">
+                                                                <div class="divider"></div>
+                                                                <div class="right-part">
+                                                                    <div class="d-flex justify-content-between">
+                                                                        <h4 class="item-title">Menace AI Project</h4>
+                                                                        <p class="item-title">Machine Learning, Java,
+                                                                            Object-Oriented Design</p>
+                                                                    </div>
+                                                                    <p class="item-title">https://www.google.com/</p>
+                                                                    <p>
+                                                                    <ul>
+                                                                        <li>Reinforcement learning AI programmed to
+                                                                            learn how to play Tic-Tac-Toe.
+                                                                        </li>
+                                                                        <li>Includes multiple different partners to
+                                                                            train against (Perfect, random, and second
+                                                                            Menace instance).
+                                                                        </li>
+                                                                        <li>Includes a GCUI interface to allow users to
+                                                                            play.
+                                                                        </li>
+                                                                    </ul>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <a href="#">
-                                                        <img src="images/projects/project1.png"
-                                                             class="size-blog-masonry-image-two-c"
-                                                             alt="Best Practices for Animated Progress Indicators"
-                                                             title=""/>
-                                                        <div class="mask"></div>
-                                                    </a>
-                                                </div>
-                                                <div class="post-info">
-                                                    <div class="post-date">Experience a lifetime adventure. Save up on
-                                                        your holiday
-                                                    </div>
-                                                    <a href="#">
-                                                        <h4 class="blog-item-title">Tripsomnia
-                                                            Experience a lifetime adventure. Save up on your
-                                                            holiday</h4>
-                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- End of Project Post 1 -->
-
-                                        <!-- Project Post 2 -->
-                                        <div class="item post-2">
-                                            <div class="blog-card">
-                                                <div class="media-block">
-                                                    <div class="category">
-                                                        <a href="#" title="View all posts in E-Commerce">FestBlast</a>
-                                                    </div>
-                                                    <a href="#">
-                                                        <img src="images/projects/project2.png"
-                                                             class="size-blog-masonry-image-two-c "
-                                                             alt="Designing the Perfect Feature Comparison Table"
-                                                             title=""/>
-                                                        <div class="mask"></div>
-                                                    </a>
-                                                </div>
-                                                <div class="post-info">
-                                                    <div class="post-date">The best way to enjoy fests</div>
-                                                    <a href="#">
-                                                        <h4 class="blog-item-title">FestBlast is an all-in-one platform
-                                                            that lets you easily find the best music fests, organize
-                                                            your trip and personalize your festival experience.</h4>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End of Project Post 2 -->
-
-                                        <!-- Project Post 3 -->
-                                        <div class="item post-3">
-                                            <div class="blog-card">
-                                                <div class="media-block">
-                                                    <div class="category">
-                                                        <a href="#" title="View all posts in E-Commerce">Gulliver</a>
-                                                    </div>
-                                                    <a href="#">
-                                                        <img src="images/projects/project3.png"
-                                                             class="size-blog-masonry-image-two-c"
-                                                             alt="An Overview of E-Commerce Platforms" title=""/>
-                                                        <div class="mask"></div>
-                                                    </a>
-                                                </div>
-                                                <div class="post-info">
-                                                    <div class="post-date">Spontaneously meet travellers and experience
-                                                        the city together
-                                                    </div>
-                                                    <a href="#">
-                                                        <h4 class="blog-item-title">This mobile application allows you
-                                                            to:
-                                                            <ul>
-                                                                <li>easily find activities for your nearest location,
-                                                                </li>
-                                                                <li>meet other travellers,</li>
-                                                                <li>set up a social meeting.</li>
-                                                            </ul>
-                                                        </h4>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End of Project Post 3 -->
-
-                                        <!-- Blog Project 4 -->
-                                        <div class="item post-4">
-                                            <div class="blog-card">
-                                                <div class="media-block">
-                                                    <div class="category">
-                                                        <a href="#" title="View all posts in E-Commerce">Gulliver</a>
-                                                    </div>
-                                                    <a href="#">
-                                                        <img src="images/projects/project3.png"
-                                                             class="size-blog-masonry-image-two-c"
-                                                             alt="An Overview of E-Commerce Platforms" title=""/>
-                                                        <div class="mask"></div>
-                                                    </a>
-                                                </div>
-                                                <div class="post-info">
-                                                    <div class="post-date">Spontaneously meet travellers and experience
-                                                        the city together
-                                                    </div>
-                                                    <a href="#">
-                                                        <h4 class="blog-item-title">This mobile application allows you
-                                                            to:
-                                                            <ul>
-                                                                <li>easily find activities for your nearest location,
-                                                                </li>
-                                                                <li>meet other travellers,</li>
-                                                                <li>set up a social meeting.</li>
-                                                            </ul>
-                                                        </h4>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End of Project Post 4 -->
                                     </div>
                                 </div>
                             </div>
@@ -392,7 +325,7 @@
                 <!-- End of Projects Subpage -->
 
                 <!-- Education Subpage -->
-                <section class="pt-page" data-id="education">
+                <section class="pt-page" id="education">
                     <div class="section-inner custom-page-content">
                         <div class="section-title-block second-style">
                             <h2 class="section-title">Education</h2>
@@ -412,7 +345,8 @@
                                             <div class="timeline-item clearfix">
                                                 <div class="left-part">
                                                     <h5 class="item-period">University of Ottawa</h5>
-                                                    <h6><span class="item-company">September 2019 – April 2024</span></h6>
+                                                    <h6><span class="item-company">September 2019 – April 2024</span>
+                                                    </h6>
                                                 </div>
                                                 <div class="divider"></div>
                                                 <div class="right-part">
@@ -436,7 +370,7 @@
                 <!-- /Education Subpage -->
 
                 <!-- Skills Subpage -->
-                <section class="pt-page" data-id="skills">
+                <section class="pt-page" id="skills">
                     <div class="section-inner custom-page-content">
                         <div class="section-title-block second-style">
                             <h2 class="section-title">Skills</h2>
@@ -446,7 +380,7 @@
                         <div class="section-content">
 
                             <!-- Programming Languages Block -->
-                            <div class="row">
+                            <div class="row py-3">
                                 <div class="col-xs-12 col-sm-12">
                                     <div class="col-inner">
                                         <!--Programming Languages Title -->
@@ -456,39 +390,27 @@
                                         <!-- /Programming Languages Title -->
 
                                         <!-- Programming Languages Carousel Block -->
-                                        <div class="clients owl-carousel">
-                                            <div class="client-block picture-opacity">
-                                                <a target="_blank" title="">
+                                        <div class="clients">
+                                            <div class="py-2 py-md-3">
+                                                <a class="picture-opacity px-1" target="_blank" title="">
                                                     <img src="images/programming_langauges/c++.svg" alt="Logo">
                                                 </a>
-                                            </div>
-                                            <div class="client-block picture-opacity">
-                                                <a target="_blank" title="">
+                                                <a class="picture-opacity px-1" target="_blank" title="">
                                                     <img src="images/programming_langauges/go.svg" alt="Logo">
                                                 </a>
-                                            </div>
-                                            <div class="client-block picture-opacity">
-                                                <a target="_blank" title="">
+                                                <a class="picture-opacity px-1" target="_blank" title="">
                                                     <img src="images/programming_langauges/Groovy.svg" alt="Logo">
                                                 </a>
-                                            </div>
-                                            <div class="client-block picture-opacity">
-                                                <a target="_blank" title="">
+                                                <a class="picture-opacity px-1" target="_blank" title="">
                                                     <img src="images/programming_langauges/postgreSQL.svg" alt="Logo">
                                                 </a>
-                                            </div>
-                                            <div class="client-block picture-opacity">
-                                                <a target="_blank" title="">
+                                                <a class="picture-opacity px-1" target="_blank" title="">
                                                     <img src="images/programming_langauges/python.svg" alt="Logo">
                                                 </a>
-                                            </div>
-                                            <div class="client-block picture-opacity">
-                                                <a target="_blank" title="">
+                                                <a class="picture-opacity px-1" target="_blank" title="">
                                                     <img src="images/programming_langauges/SQL.svg" alt="Logo">
                                                 </a>
-                                            </div>
-                                            <div class="client-block picture-opacity">
-                                                <a target="_blank" title="">
+                                                <a class="picture-opacity px-1" target="_blank" title="">
                                                     <img src="images/programming_langauges/java.svg" alt="Logo">
                                                 </a>
                                             </div>
@@ -500,7 +422,7 @@
                             <!-- /Programming Languages Block -->
 
                             <!-- Framework/Technologies Block -->
-                            <div class="row">
+                            <div class="row py-3">
                                 <div class="col-xs-12 col-sm-12">
                                     <div class="col-inner">
                                         <!-- Framework/Technologies Block Title -->
@@ -510,34 +432,24 @@
                                         <!-- /Framework/Technologies Block Title -->
 
                                         <!-- Framework/Technologies Carousel Block -->
-                                        <div class="clients owl-carousel">
-                                            <div class="client-block picture-opacity">
-                                                <a target="_blank" title="">
+                                        <div class="clients">
+                                            <div class="py-2 py-md-3">
+                                                <a class="picture-opacity px-1" target="_blank" title="">
                                                     <img src="images/framework/1.svg" alt="Logo">
                                                 </a>
-                                            </div>
-                                            <div class="client-block picture-opacity">
-                                                <a target="_blank" title="">
+                                                <a class="picture-opacity px-1" target="_blank" title="">
                                                     <img src="images/framework/2.svg" alt="Logo">
                                                 </a>
-                                            </div>
-                                            <div class="client-block picture-opacity">
-                                                <a target="_blank" title="">
+                                                <a class="picture-opacity px-1" target="_blank" title="">
                                                     <img src="images/framework/3.svg" alt="Logo">
                                                 </a>
-                                            </div>
-                                            <div class="client-block picture-opacity">
-                                                <a target="_blank" title="">
+                                                <a class="picture-opacity px-1" target="_blank" title="">
                                                     <img src="images/framework/4.svg" alt="Logo">
                                                 </a>
-                                            </div>
-                                            <div class="client-block picture-opacity">
-                                                <a target="_blank" title="">
+                                                <a class="picture-opacity px-1" target="_blank" title="">
                                                     <img src="images/framework/5.svg" alt="Logo">
                                                 </a>
-                                            </div>
-                                            <div class="client-block picture-opacity">
-                                                <a target="_blank" title="">
+                                                <a class="picture-opacity px-1" target="_blank" title="">
                                                     <img src="images/framework/6.svg" alt="Logo">
                                                 </a>
                                             </div>
@@ -559,29 +471,21 @@
                                         <!-- /Developer Block Title -->
 
                                         <!-- Developer Carousel Block -->
-                                        <div class="clients owl-carousel">
-                                            <div class="client-block picture-opacity">
-                                                <a target="_blank" title="">
+                                        <div class="clients">
+                                            <div class="py-2 py-md-3">
+                                                <a class="picture-opacity px-1" target="_blank" title="">
                                                     <img src="images/developer_tools/1.svg" alt="Logo">
                                                 </a>
-                                            </div>
-                                            <div class="client-block picture-opacity">
-                                                <a target="_blank" title="">
+                                                <a class="picture-opacity px-1" target="_blank" title="">
                                                     <img src="images/developer_tools/2.svg" alt="Logo">
                                                 </a>
-                                            </div>
-                                            <div class="client-block picture-opacity">
-                                                <a target="_blank" title="">
+                                                <a class="picture-opacity px-1" target="_blank" title="">
                                                     <img src="images/developer_tools/3.svg" alt="Logo">
                                                 </a>
-                                            </div>
-                                            <div class="client-block picture-opacity">
-                                                <a target="_blank" title="">
+                                                <a class="picture-opacity px-1" target="_blank" title="">
                                                     <img src="images/developer_tools/4.svg" alt="Logo">
                                                 </a>
-                                            </div>
-                                            <div class="client-block picture-opacity">
-                                                <a target="_blank" title="">
+                                                <a class="picture-opacity px-1" target="_blank" title="">
                                                     <img src="images/developer_tools/5.svg" alt="Logo">
                                                 </a>
                                             </div>
@@ -599,7 +503,7 @@
                 <!-- /Skills Subpage -->
 
                 <!-- Contact Subpage -->
-                <section class="pt-page" data-id="contact">
+                <section class="pt-page" id="contact">
                     <div class="section-inner custom-page-content">
                         <div class="section-title-block second-style">
                             <h2 class="section-title">Contact us</h2>
@@ -612,7 +516,7 @@
                                         <h3></h3>
                                     </div>
 
-                                    <form id="contact_form" class="contact-form" action="contact_form/contact_form.php"
+                                    <form id="contact_form" class="contact-form" action="https://formspree.io/f/mvonawbj"
                                           method="post">
 
                                         <div class="messages"></div>
@@ -620,33 +524,26 @@
                                         <div class="controls three-columns">
                                             <div class="fields clearfix">
                                                 <div class="left-column">
-                                                    <div class="form-group form-group-with-icon">
-                                                        <input id="form_name" type="text" name="name"
-                                                               class="form-control" placeholder="Name"
-                                                               required="required" data-error="Name is required.">
-                                                        <div class="form-control-border"></div>
-                                                        <div class="help-block with-errors"></div>
-                                                    </div>
 
                                                     <div class="form-group form-group-with-icon">
-                                                        <input id="form_email" type="email" name="email"
-                                                               class="form-control" placeholder="Email"
-                                                               required="required"
-                                                               data-error="Valid email is required.">
-                                                        <div class="form-control-border"></div>
-                                                        <div class="help-block with-errors"></div>
-                                                    </div>
-
-                                                    <div class="form-group form-group-with-icon">
-                                                        <textarea id="form_message" name="message" class="form-control"
+                                                        <textarea name="message" class="form-control"
                                                                   placeholder="Message" rows="7" required="required"
                                                                   data-error="Please, leave me a message."></textarea>
                                                         <div class="form-control-border"></div>
                                                         <div class="help-block with-errors"></div>
                                                     </div>
+
+                                                    <div class="form-group form-group-with-icon">
+                                                        <input type="text" name="sender"
+                                                               class="form-control" placeholder="From"
+                                                               required="required" data-error="From is required.">
+                                                        <div class="form-control-border"></div>
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+
                                                 </div>
                                             </div>
-                                            <input type="submit" class="button btn-send" value="Send message">
+                                            <input type="submit" class="button btn-send" value="Submit">
                                         </div>
                                     </form>
                                 </div>
@@ -665,13 +562,17 @@
 
 <script src="js/jquery-2.1.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/pages-switcher.js"></script>
 <script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/jquery.malihu.PageScroll2id.min.js"></script>
 <script src="js/validator.js"></script>
 <script src="js/jquery.shuffle.min.js"></script>
 <script src="js/masonry.pkgd.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
+<!--<script src='https://www.google.com/recaptcha/api.js'></script>-->
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=YOUR-API-KEY"></script>-->
+<!--<script src="https://maps.googleapis.com/maps/api/js"></script>-->
+<!--<script src="js/jquery.googlemap.js"></script>-->
 <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,12 +1,14 @@
-
+/* =============================================================================
+1. Fonts
+============================================================================= */
 /* Font Awesome icons font */
-@import url('../fonts/fontawesome-free/css/all.min.css');
+@import url('../fonts/fontawesome-free/css/all.min.css'); /* Full icons list: https://fontawesome.com/icons?d=gallery&m=free */
 
 /* Linearicons Font */
-@import url('Linearicons-Free.css');
+@import url('Linearicons-Free.css'); /* Full icons list: https://linearicons.com/free */
 
 /* 7 stroke icons font by Pixeden */
-@import url('pe-icon-7-stroke.css');
+@import url('pe-icon-7-stroke.css'); /* Full icons list: http://themes-pixeden.com/font-demos/7-stroke/index.html */
 
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i');
@@ -48,21 +50,6 @@ body, p {
 
 body.ajax-page-visible {
   overflow: hidden;
-}
-
-body::-webkit-scrollbar {
-  position: absolute;
-  width: 8px;
-  margin-left: -8px;
-}
- 
-body::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.2);
-}
- 
-body::-webkit-scrollbar-thumb {
-  background-color: #9e9e9e;
-  outline: 1px solid slategrey;
 }
 
 a {
@@ -154,7 +141,7 @@ img {
   visibility: visible;
 }
 
-
+/* Form controls */
 .form-group {
   position: relative;
   margin: 0 0 21.5px;
@@ -219,6 +206,7 @@ textarea.form-control, textarea.form-control:focus {
   background: #ff4c4c;
 }
 
+/* Placeholders */
 .form-control::-moz-placeholder {
   color: #adadac;
 }
@@ -230,7 +218,7 @@ textarea.form-control, textarea.form-control:focus {
 .form-control::-webkit-input-placeholder {
   color: #adadac;
 }
-
+/* /Placeholders */
 
 .form-group .help-block {
   position: absolute;
@@ -476,7 +464,7 @@ body > footer .copyrights {
 .bs-50 {
   padding-bottom: 50px;
 }
-
+/* /Bottom Spaces */
 
 blockquote {
   padding: 15px 20px;
@@ -560,12 +548,6 @@ blockquote {
   max-width: 100%;
   height: 100%;
   max-height: 100%;
-  -webkit-perspective: 1500px;
-  -moz-perspective: 1500px;
-  perspective: 1500px;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 
 .pt-page {
@@ -585,9 +567,6 @@ blockquote {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-transform: translate3d(0,0,0);
-  -moz-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
 }
 
 .section-inner.start-page-full-width+.section-inner.custom-page-content {
@@ -603,10 +582,6 @@ blockquote {
   background-color: transparent;
   padding: 50px 70px 70px;
   background-color: #fff;
-  -webkit-transform: translate3d(0,0,0);
-  -o-transform: translate3d(0,0,0);
-  -moz-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   -ms-transform: none;
 }
 
@@ -629,6 +604,9 @@ blockquote {
   min-height: 100%;
 }
 
+.section-inner.start-page-full-width .inner-content .fill-block {
+  background-image: url(../images/sp_photo.jpg);
+}
 .section-inner.start-page-full-width .inner-content .fill-block {
   position: relative;
   height: 100%;
@@ -732,7 +710,7 @@ blockquote {
 
 .header {
   position: fixed;
-  width: 160px;
+  width: 250px;
   top: 0;
   bottom: 0;
   padding: 10px 0 0;
@@ -770,7 +748,6 @@ blockquote {
   height: 80px;
   max-height: 80px;
   width: 80px;
-  border-radius: 25px;
 }
 
 .site-title-block {
@@ -844,13 +821,13 @@ blockquote {
 }
 
 .site-main-menu li a:hover,
-.site-main-menu li.active a {
+.site-main-menu li a.active {
   background-color: #fcfcfc;
   color: inherit;
 }
 
 .site-main-menu li a:hover:after,
-.site-main-menu li.active a:after {
+.site-main-menu li a.active:after {
   display: block;
   position: absolute;
   right: 0;
@@ -865,7 +842,7 @@ blockquote {
   transition: all 0.18s ease-out;
 }
 
-.site-main-menu li.active a:after {
+.site-main-menu li a.active:after {
   background-color: #0099e5;
 }
 
@@ -919,11 +896,6 @@ blockquote {
   font-size: 21px;
   line-height: 50px;
 }
-/* /Mobile menu toggle */
-
-
-
-
 
 .page-header {
   margin: 0;
@@ -934,7 +906,6 @@ blockquote {
 .page-content {
   background-color: #fff;
 }
-
 
 .section-title-block.first-style, .section-title-block.second-style {
   margin-bottom: 40px;
@@ -988,7 +959,6 @@ blockquote {
 
 
 
-
 .info-block-w-icon {
   position: relative;
   text-align: left;
@@ -1024,8 +994,6 @@ blockquote {
 .info-block-w-icon .ci-text p {
   font-size: .92em;
 }
-
-
 
 
 .testimonial-item {
@@ -1113,7 +1081,6 @@ blockquote {
   color: #aaa;
 }
 
-
 .clients.owl-carousel {
   padding-bottom: 35px;
 }
@@ -1173,7 +1140,7 @@ blockquote {
 }
 
 .timeline-second-style .left-part {
-  width: 30%;
+  width: 20%;
   display: table-cell;
   padding-right: 25px;
   min-height: 100%;
@@ -1198,7 +1165,7 @@ blockquote {
 .timeline-second-style .divider {
   position: absolute;
   top: 0;
-  left: 30%;
+
   bottom: 0;
   width: 1px;
   background-color: #eee;
@@ -1323,6 +1290,9 @@ blockquote {
 .skill-percentage.skill-10 {
   width: 80%;
 }
+/* /Skills */
+
+
 
 .portfolio-grid {
   margin-left: -0.5em;
@@ -1547,6 +1517,7 @@ blockquote {
 }
 
 
+
 .blog-masonry {
   margin: 0 -1em 1.8em;
 }
@@ -1722,6 +1693,8 @@ blockquote {
 }
 
 
+
+
 .lm-info-block {
   position: relative;
   text-align: center;
@@ -1741,9 +1714,7 @@ blockquote {
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.card-styling{
-  border-radius: 25px !important;
-}
+
 .lm-info-block i {
     position: relative;
     font-size: 40px;
@@ -1754,7 +1725,6 @@ blockquote {
     font-size: 16px;
     margin-top: 10px;
 }
-
 
 .g-recaptcha {
   margin-bottom: 20px;
@@ -1776,6 +1746,9 @@ blockquote {
   height: 150px;
   margin: 0 0 30px;
 }
+
+
+
 
 .testimonials {
   width: 100%;
@@ -2103,6 +2076,7 @@ blockquote {
   line-height: 26px;
 }
 
+/* Tags Block */
 .tags-block {
   margin: 25px 0 0;
 }
@@ -2381,7 +2355,7 @@ blockquote p {
   font-style: italic;
 }
 
-
+/* ====== Entry Meta ======= */
 .entry-meta {
   clear: both;
   line-height: 1.3333333333;
@@ -2486,7 +2460,7 @@ blockquote p {
   margin: 2px 10px 0;
 }
 
-
+/* ======= Post/Image/Paging Navigation ======= */
 .nav-links {
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
@@ -2544,13 +2518,18 @@ blockquote p {
   color: #0099e5;
 }
 
-
+/* Posts Navigation & Comments */
 .single-page-content .post-navigation,
 .single-page-content .comments-area {
   margin: 30px 70px 0;
 }
 
 
+
+
+/* ============================================================================= 
+11. Media Queries 
+============================================================================= */
 
 @media only screen and (max-width: 1320px) {
   .portfolio-grid figure {
@@ -2831,7 +2810,6 @@ blockquote p {
     height: auto;
     margin: 0;
     border: 0;
-    overflow-x: hidden;
   }
 
   .section-title-block,
@@ -3203,7 +3181,7 @@ blockquote p {
 
 .start-page .section-inner {
   background-color: transparent;
-  background-image: url(../images/jacob_kszan.jpg);
+  background-image: url(../images/kerge_start_page_1.jpg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-attachment: fixed;
@@ -3224,6 +3202,10 @@ blockquote p {
   left: 0;
   bottom: 0;
   background: rgba(10,10,10,0.45);
+  /*background-image: url(../images/portfolio/1.jpg);*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: center;*/
+  /*background-size: cover;*/
 }
 
 .start-page .title-block {
@@ -3265,37 +3247,39 @@ blockquote p {
   color: #0099e5;
 }
 
-.lmpixels-arrows-nav {
-  position: absolute;
+.lmpixels-scroll-to-top {
+  position: fixed;
   bottom: 10px;
   right: 15px;
   z-index: 100;
-}
-
-.lmpixels-arrows-nav > div {
   display: inline-block;
   padding: 0;
   background-color: #fafafa;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   text-align: center;
-  line-height: 40px;
-  font-size: 18px;
+  line-height: 50px;
+  font-size: 24px;
   cursor: pointer;
   border: 1px solid #e5e5e5;
   color: #333;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  -webkit-box-shadow: 0 0 8px 0 rgba(0,0,0,.1);
-  -moz-box-shadow: 0 0 8px 0 rgba(0,0,0,.1);
-  box-shadow: 0 0 8px 0 rgba(0,0,0,.1);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-box-shadow: 0 0 12px 0 rgba(0,0,0,.12);
+  -moz-box-shadow: 0 0 12px 0 rgba(0,0,0,.12);
+  box-shadow: 0 0 12px 0 rgba(0,0,0,.12);
 }
 
-.lmpixels-arrows-nav > div:hover {
+.lmpixels-scroll-to-top:hover {
   color: #0099e5;
+}
+
+.lmpixels-scroll-to-top.hidden {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .info-list {
@@ -3360,47 +3344,130 @@ blockquote p {
   color: #aeaeae;
 }
 
-.pt-page.start-page.first-style {
+body {
+  overflow: auto;
+}
+.one-page-style .site-main,
+.one-page-style .pt-wrapper,
+.one-page-style .subpages {
+  min-height: auto;
+  max-height: none;
+  height: auto;
+}
+.one-page-style .pt-page {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  min-height: auto;
+  padding-bottom: 10px;
+  opacity: 1;
+  visibility: visible;
+}
+.one-page-style  .pt-page.start-page {
+  min-height: 100vh;
+}
+.one-page-style .pt-page:last-child {
+  padding-bottom: 0;
+}
+.one-page-style .pt-page .section-inner:not(.start-page-full-width) {
+  padding-top: 40px;
+}
+.one-page-style .pt-page:last-child .section-inner:not(.start-page-full-width) {
+  padding-bottom: 70px;
+}
+.one-page-style .lmpixels-arrows-nav {
+  position: fixed;
+}
+.blog-masonry {
+  margin-bottom: 0;
+}
+
+
+.timeline-second-style1 .timeline-item {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.timeline-second-style1 .left-part {
+  width: 20%;
+  display: table-cell;
+  padding-right: 25px;
+  min-height: 100%;
+  text-align: right;
+  vertical-align: top;
+}
+
+.timeline-second-style1 .item-period {
+  margin: 3px 0;
+  font-size: 14px;
+  line-height: 1.4em;
+}
+
+.timeline-second-style1 .item-company {
   display: block;
+  color: #aaa;
+  margin: 0 0 4px;
+  font-size: 12px;
+  line-height: 1.45em;
 }
-.start-page .vcentered {
-  vertical-align: middle;
-  width: 100%;
-  align-items: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 100%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-direction: normal;
-  -moz-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-content: stretch;
-  -ms-flex-line-pack: stretch;
-  align-content: stretch;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
+
+.timeline-second-style1 .divider {
+  position: absolute;
+  top: 0;
+  left: 10rem;
+  bottom: 0;
+  width: 1px;
+  background-color: #eee;
 }
-.start-page .vcentered .row {
-  width: 100%;
+
+.timeline-second-style1 .divider:after {
+  content: '';
+  display: block;
+  margin-top: 7px;
+  width: 11px;
+  height: 11px;
+  margin-left: -5px;
+  border-radius: 5px;
+  border: 2px solid #0099e5;
+  background-color: #fff;
 }
+
+.timeline-second-style1 .right-part {
+  width: 70%;
+  display: table-cell;
+  padding-left: 25px;
+  padding-right: 15px;
+  vertical-align: top;
+}
+
+.timeline-second-style1 .item-title {
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.timeline-second-style1 .right-part p, .timeline-second-style1 .right-part p>* {
+  font-size: .92em;
+}
+
+
+@media (max-width: 576px) {
+  .timeline-second-style1 .divider {
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    bottom: 0;
+    width: 1px;
+    background-color: #eee;
+  }
+  .timeline-second-style1 .right-part {
+    width: 70%;
+    display: table-cell;
+    padding-left: 0px;
+    padding-right: 0px;
+    vertical-align: top;
+  }
+}
+

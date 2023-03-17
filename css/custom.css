@@ -15,3 +15,11 @@
 .picture-opacity{
     opacity: 1 !important;
 }
+.picture-opacity img {
+    padding: 18px;
+    vertical-align: bottom;
+    max-width: 100px;
+    height: auto;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
