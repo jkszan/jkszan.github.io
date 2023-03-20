@@ -1,0 +1,4 @@
+- Remove the timeline lines on the last entry of a section (End in the blue circle)
+- On hover, all icons in the skills section should show their names
+- Project links should actually work and have the little source link icon next to them
+- Change the format of the intro section
