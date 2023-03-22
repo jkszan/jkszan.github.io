@@ -75,7 +75,7 @@ a:focus {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Poppins, Helvetica, sans-serif;
-    font-weight: 600;
+    font-weight: 350;
     font-style: normal;
     color: #333333;
     line-height: 1.5em;
@@ -808,7 +808,6 @@ blockquote {
   letter-spacing: 0px;
   display: block;
   position: relative;
-  padding: 10px 20px;
   text-align: center;
   position: relative;
   text-decoration: none;
@@ -930,6 +929,21 @@ blockquote {
   height: 2px;
   background-color: #eee;
   opacity: 1;
+}
+
+
+.section-title-block.third-style .section-title:after, .page-title-wrap.second-style h2.page-title:after {
+  display: block;
+  content: '';
+  width: 100%;
+  margin-top: 5px;
+  height: 2px;
+  background-color: #eee;
+  opacity: 1;
+}
+
+.section-title-block.third-style {
+  margin-bottom: 20px;
 }
 
 .section-title-block.second-style .section-description {
